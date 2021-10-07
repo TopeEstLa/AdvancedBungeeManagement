@@ -1,0 +1,8 @@
+GLOBAL:
+  MOTD: "   §3❄ §b§lX§3eno§bZ§3ia §3❄ §b§lServeur Faction §r§8• §7(1.8 - 1.15) \n          §c§lEn développement §8-  §bxenozia.fr"
+  VERSION: ""
+MAINTENANCE:
+  MOTD: "   §3❄ §b§lX§3eno§bZ§3ia §3❄ §b§lServeur Faction §r§8• §7(1.8 - 1.15) \n          §c§lEn maintenance §8-  §bxenozia.fr"
+  VERSION: "§cMaintenance."
+  MESSAGE: "§7Le serveur est actuellement en §cmaintenance."
+  ADMIN: "TopeEstLa"

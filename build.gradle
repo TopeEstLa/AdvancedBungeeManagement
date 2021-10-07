@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'me.topeestla'
+version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    jarIncluded
+}
+
+dependencies {
+    compile fileTree("libs")
+    jarIncluded fileTree("libs/jar_included")
+}
+
+
+jar {
+    from { configurations.jarIncluded.collect { it.isDirectory() ? it : zipTree(it) } }
+}
