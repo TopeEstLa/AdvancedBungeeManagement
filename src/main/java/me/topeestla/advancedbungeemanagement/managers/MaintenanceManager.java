@@ -46,7 +46,7 @@ public class MaintenanceManager implements IDataSerialisables<Maintenance> {
     }
 
     /**
-     * @return maintenance is on
+     * @return maintenance status
      */
     public boolean isMaintenanced() {
         return this.maintenance.isEnabled();

@@ -13,8 +13,8 @@ public class Maintenance implements Serializable {
     private boolean enabled;
     public List<String> playersWhitelisted;
 
-    public Maintenance() {
-    }
+
+    public Maintenance() {}
 
     public Maintenance(String owner) {
         this.enabled = false;
@@ -26,7 +26,7 @@ public class Maintenance implements Serializable {
      * @param status Update the maintenance status
      */
     public void setStatus(boolean status) {
-        this.enabled = enabled;
+        this.enabled = status;
     }
 
     /**
