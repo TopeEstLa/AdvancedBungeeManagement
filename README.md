@@ -7,14 +7,14 @@ AdvancedBungeeManagement is currently in pre-release. It is very likely that you
 AdvancedBungeeManagement is a plugin which allows you to easily manage your bungeecord proxy with an integrated maintenance and boost system
 
 
-## Features
+## 🔌Features
 | Feature | Status | 
 | --- | :-: |
 | MOTD | ✔ |
 | Maintenance System | ✔ |
 | Boost System | 🔨 |
 
-## Getting Started
+## ⚔️Getting Started
 
 
 ### Prerequisites
@@ -28,7 +28,7 @@ AdvancedBungeeManagement is a plugin which allows you to easily manage your bung
 3. Configure the plugin to your liking
 4. Now enjoy it !
 
-## Contributing
+## 🖌Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -36,6 +36,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the GPL License. See `LICENSE` for more information.
 
+## ✉️ Contacts
 <a href="https://twitter.com/TopeEstPasLa"><img height="40" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
 <a href="mailto:contact.tope95@gmail.com"><img height="40" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 <a href=""><img height="40" src="https://discord.c99.nl/widget/theme-3/424290757445419009.png">
