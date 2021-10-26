@@ -37,6 +37,17 @@ public class MaintenanceManager implements IDataSerialisables<Maintenance> {
         }
     }
 
+    /**
+     * @param playerName
+     * @return boolean playerCanJoin
+     */
+    public boolean playerCanJoin(String playerName) {
+        return this.maintenance.getPlayersWhitelisted().contains(playerName);
+    }
+
+    /**
+     * @return maintenance is on
+     */
     public boolean isMaintenanced() {
         return this.maintenance.isEnabled();
     }
@@ -44,7 +55,7 @@ public class MaintenanceManager implements IDataSerialisables<Maintenance> {
     /**
      * Save the maintenance configuration
      */
-    private void saveMaintenance() {
+    public void saveMaintenance() {
         this.save(this.maintenanceFile, this.maintenance);
     }
 

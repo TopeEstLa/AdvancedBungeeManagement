@@ -29,10 +29,9 @@ public class ConfigurationManager {
     }
 
     /**
-     *
-     * @param path path of YML string
+     * @param path         path of YML string
      * @param formatColors true if you want to replace & with §
-     * @param format format Strings to another String (ex. {name} -> KayzunYT} you can create an double Array String[][]{{"key", "value"}, {"key", "value"}}
+     * @param format       format Strings to another String (ex. {name} -> KayzunYT} you can create an double Array String[][]{{"key", "value"}, {"key", "value"}}
      * @return formatted String
      */
     public String getFormattedString(String path, boolean formatColors, String[][] format) {
@@ -52,10 +51,9 @@ public class ConfigurationManager {
     }
 
     /**
-     *
-     * @param path path of YML String list
+     * @param path         path of YML String list
      * @param formatColors true if you want to replace & with §
-     * @param format format Strings to another String (ex. {name} -> KayzunYT} you can create an double Array String[][]{{"key", "value"}, {"key", "value"}}
+     * @param format       format Strings to another String (ex. {name} -> KayzunYT} you can create an double Array String[][]{{"key", "value"}, {"key", "value"}}
      * @return formatted String
      */
     public List<String> getFormattedStringList(String path, boolean formatColors, String[][] format) {

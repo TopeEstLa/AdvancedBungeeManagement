@@ -13,7 +13,8 @@ public class Maintenance implements Serializable {
     private boolean enabled;
     public List<String> playersWhitelisted;
 
-    public Maintenance() { }
+    public Maintenance() {
+    }
 
     public Maintenance(String owner) {
         this.enabled = false;
@@ -21,24 +22,39 @@ public class Maintenance implements Serializable {
         this.playersWhitelisted.add(owner);
     }
 
-    public void setStatus(boolean enabled) {
+    /**
+     * @param status Update the maintenance status
+     */
+    public void setStatus(boolean status) {
         this.enabled = enabled;
     }
 
+    /**
+     * @param playerName Add player to the maintenance
+     */
     public void addPlayer(String playerName) {
         this.playersWhitelisted.add(playerName);
     }
 
+    /**
+     * @param playerName Remove player form the maintenance
+     */
     public void removePlayer(String playerName) {
         if (this.playersWhitelisted.contains(playerName)) {
             this.playersWhitelisted.remove(playerName);
         }
     }
 
+    /**
+     * @return maitenance isEnabled
+     */
     public boolean isEnabled() {
         return this.enabled;
     }
 
+    /**
+     * @return playersWhitelisted
+     */
     public List<String> getPlayersWhitelisted() {
         return playersWhitelisted;
     }

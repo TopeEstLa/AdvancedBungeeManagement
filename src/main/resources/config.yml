@@ -1,8 +1,19 @@
 GLOBAL:
-  MOTD: "   §3❄ §b§lX§3eno§bZ§3ia §3❄ §b§lServeur Faction §r§8• §7(1.8 - 1.15) \n          §c§lEn développement §8-  §bxenozia.fr"
+  MOTD: " &b&lSeasonSky &f» &a&lSkyblock Farm2Win &7(1.12 - 1.17) \n &fSystème de &e&lRangs &fet &e&lDonjons &finédits "
   VERSION: ""
+  HELP:
+    - "&6«&6&m-&e&m-----------------------------------------&6&m-&6»"
+    - "                  &f✦ &e&lAdvancedBungeeManagement &f✦"
+    - " "
+    - " &6● &e/maintenance on &8- &7Turn on the maintenance"
+    - " &6● &e/maintenance off &8- &7Turn off the maintenance"
+    - " &6● &e/maintenance status &8- &7Get maintenance status"
+    - " &6● &e/maintenance add &8- &7Add player to maintenance"
+    - " &6● &e/maintenance remove &8- &7Remove player to maintenance"
+    - " "
+    - "&6«&6&m-&e&m-----------------------------------------&6&m-&6»"
 MAINTENANCE:
-  MOTD: "   §3❄ §b§lX§3eno§bZ§3ia §3❄ §b§lServeur Faction §r§8• §7(1.8 - 1.15) \n          §c§lEn maintenance §8-  §bxenozia.fr"
+  MOTD: " &b&lSeasonSky &f» &a&lSkyblock Farm2Win &7(1.12 - 1.17) \n          §c§lEn Maintenance"
   VERSION: "§cMaintenance."
   MESSAGE: "§7Le serveur est actuellement en §cmaintenance."
   ADMIN: "TopeEstLa"
