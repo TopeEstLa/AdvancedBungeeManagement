@@ -1,7 +1,7 @@
 # AdvancedBungeeManagement
 
 ## Disclaimer
-AdvancedBungeeManagement is currently in pre-release. It is very likely that you will encounter bugs there. Please report any issue on GitHub.
+AdvancedBungeeManagement is currently in pre-release. It is very likely that you will encounter bugs there. Please report any issue here.
 
 ## About The Project
 AdvancedBungeeManagement is a plugin which allows you to easily manage your bungeecord proxy with an integrated maintenance and boost system
@@ -19,13 +19,12 @@ AdvancedBungeeManagement is a plugin which allows you to easily manage your bung
 
 ### Prerequisites
 
-* A BungeeCord server
-* One or more spigot servers
+* Bungeecord proxy
 
 ### Installation
 
 1. Get the .jar in the releases
-3. Configure the plugin to your liking
+3. Configure the plugin
 4. Now enjoy it !
 
 ## 🖌Contributing
