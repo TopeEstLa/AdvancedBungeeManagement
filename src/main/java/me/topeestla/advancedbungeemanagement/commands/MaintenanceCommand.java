@@ -55,10 +55,14 @@ public class MaintenanceCommand extends Command {
                         break;
                     case "remove":
                         if (args.length == 2) {
-                            this.advancedBungeeManagement.getMaintenanceManager().getMaintenance().removePlayer(args[1]);
-                            this.advancedBungeeManagement.getMaintenanceManager().saveMaintenance();
+                            if (!this.advancedBungeeManagement.getMaintenanceManager().getMaintenance().getPlayersWhitelisted().contains(args[1])) {
+                                this.advancedBungeeManagement.getMaintenanceManager().getMaintenance().removePlayer(args[1]);
+                                this.advancedBungeeManagement.getMaintenanceManager().saveMaintenance();
 
-                            sender.sendMessage(new TextComponent("§eThe player §6§l" + args[1] + " §ehas been removed from maintenance."));
+                                sender.sendMessage(new TextComponent("§eThe player §6§l" + args[1] + " §ehas been removed from maintenance."));
+                            } else {
+                                sender.sendMessage(new TextComponent("§eThe player §6§l" + args[1] + " §eisnt in the maintenance."));
+                            }
                         } else {
                             sender.sendMessage(new TextComponent("§e/maintenance remove <Player>"));
                         }

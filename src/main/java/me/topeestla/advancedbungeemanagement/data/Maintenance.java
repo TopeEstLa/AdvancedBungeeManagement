@@ -14,7 +14,8 @@ public class Maintenance implements Serializable {
     public List<String> playersWhitelisted;
 
 
-    public Maintenance() {}
+    public Maintenance() {
+    }
 
     public Maintenance(String owner) {
         this.enabled = false;
@@ -40,9 +41,7 @@ public class Maintenance implements Serializable {
      * @param playerName Remove player form the maintenance
      */
     public void removePlayer(String playerName) {
-        if (this.playersWhitelisted.contains(playerName)) {
-            this.playersWhitelisted.remove(playerName);
-        }
+        this.playersWhitelisted.remove(playerName);
     }
 
     /**
