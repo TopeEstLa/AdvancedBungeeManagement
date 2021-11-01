@@ -1,6 +1,6 @@
 GLOBAL:
   MOTD: " &b&lSeasonSky &f» &a&lSkyblock Farm2Win &7(1.12 - 1.17) \n &fSystème de &e&lRangs &fet &e&lDonjons &finédits "
-  VERSION: ""
+  VERSION: "SeasonSky"
   HELP:
     - "&6«&6&m-&e&m-----------------------------------------&6&m-&6»"
     - "                  &f✦ &e&lAdvancedBungeeManagement &f✦"

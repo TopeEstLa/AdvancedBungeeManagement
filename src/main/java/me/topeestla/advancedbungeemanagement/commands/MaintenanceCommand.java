@@ -31,6 +31,9 @@ public class MaintenanceCommand extends Command {
 
                         sender.sendMessage(new TextComponent("§eMaintenance is now §a§lON."));
 
+                        this.advancedBungeeManagement.getMaintenanceManager().setMotd(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.MOTD", true, null));
+                        this.advancedBungeeManagement.getMaintenanceManager().setVersion(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.VERSION", true, null));
+
                         this.advancedBungeeManagement.getProxy().getPlayers().forEach(players -> {
                             if (!this.advancedBungeeManagement.getMaintenanceManager().playerCanJoin(players.getName())) {
                                 players.disconnect(new TextComponent(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.MESSAGE", true, null)));
@@ -40,6 +43,9 @@ public class MaintenanceCommand extends Command {
                     case "off":
                         this.advancedBungeeManagement.getMaintenanceManager().getMaintenance().setStatus(false);
                         this.advancedBungeeManagement.getMaintenanceManager().saveMaintenance();
+
+                        this.advancedBungeeManagement.getMaintenanceManager().setMotd(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("GLOBAL.MOTD", true, null));
+                        this.advancedBungeeManagement.getMaintenanceManager().setVersion(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("GLOBAL.VERSION", true, null));
 
                         sender.sendMessage(new TextComponent("§eMaintenance is now §4§lOFF."));
                         break;

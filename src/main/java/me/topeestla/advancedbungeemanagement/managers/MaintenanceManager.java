@@ -16,6 +16,9 @@ public class MaintenanceManager implements IDataSerialisables<Maintenance> {
     private File maintenanceFile;
     private Maintenance maintenance;
 
+    private String motd;
+    private String version;
+
     /**
      * @param advancedBungeeManagement
      */
@@ -34,6 +37,14 @@ public class MaintenanceManager implements IDataSerialisables<Maintenance> {
         } else {
             this.maintenance = new Maintenance(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.ADMIN", false, null));
             this.save(this.maintenanceFile, this.maintenance);
+        }
+
+        if(this.maintenance.isEnabled()) {
+            this.motd = this.advancedBungeeManagement.getConfigurationManager().getFormattedString("GLOBAL.MOTD", true, null);
+            this.version = this.advancedBungeeManagement.getConfigurationManager().getFormattedString("GLOBAL.VERSION", true, null);
+        } else {
+            this.motd = this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.MOTD", true, null);
+            this.version = this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.VERSION", true, null);
         }
     }
 
@@ -57,6 +68,38 @@ public class MaintenanceManager implements IDataSerialisables<Maintenance> {
      */
     public void saveMaintenance() {
         this.save(this.maintenanceFile, this.maintenance);
+    }
+
+    /**
+     * Set the new string motd
+     * @param motd
+     */
+    public void setMotd(String motd) {
+        this.motd = motd;
+    }
+
+    /**
+     * Set the new string version
+     * @param version
+     */
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    /**
+     *
+     * @return String motd
+     */
+    public String getMotd() {
+        return motd;
+    }
+
+    /**
+     *
+     * @return String version
+     */
+    public String getVersion() {
+        return version;
     }
 
     /**

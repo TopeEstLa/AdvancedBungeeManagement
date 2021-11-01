@@ -21,14 +21,12 @@ public class PingListeners implements Listener {
     @EventHandler
     public void onPing(ProxyPingEvent event) {
         ServerPing serverPing = event.getResponse();
-        serverPing.setDescriptionComponent(new TextComponent(this.advancedBungeeManagement.getMaintenanceManager().isMaintenanced() ?
-                this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.MOTD", true, null) :
-                this.advancedBungeeManagement.getConfigurationManager().getFormattedString("GLOBAL.MOTD", true, null)));
+        serverPing.setDescriptionComponent(new TextComponent(this.advancedBungeeManagement.getMaintenanceManager().getMotd()));
 
         if (this.advancedBungeeManagement.getMaintenanceManager().isMaintenanced()) {
-            serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("MAINTENANCE.VERSION", true, null), 2));
+            serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getMaintenanceManager().getVersion(), 2));
         } else {
-            serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getConfigurationManager().getFormattedString("GLOBAL.VERSION", true, null), serverPing.getVersion().getProtocol()));
+            serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getMaintenanceManager().getMotd(), serverPing.getVersion().getProtocol()));
         }
 
         event.setResponse(serverPing);
