@@ -10,11 +10,11 @@ import net.md_5.bungee.event.EventHandler;
 /**
  * @author TopeEstLa
  */
-public class PingListeners implements Listener {
+public class PingListener implements Listener {
 
     private final AdvancedBungeeManagement advancedBungeeManagement;
 
-    public PingListeners(AdvancedBungeeManagement advancedBungeeManagement) {
+    public PingListener(AdvancedBungeeManagement advancedBungeeManagement) {
         this.advancedBungeeManagement = advancedBungeeManagement;
     }
 
@@ -26,7 +26,7 @@ public class PingListeners implements Listener {
         if (this.advancedBungeeManagement.getMaintenanceManager().isMaintenanced()) {
             serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getMaintenanceManager().getVersion(), 2));
         } else {
-            serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getMaintenanceManager().getMotd(), serverPing.getVersion().getProtocol()));
+            serverPing.setVersion(new ServerPing.Protocol(this.advancedBungeeManagement.getMaintenanceManager().getVersion(), serverPing.getVersion().getProtocol()));
         }
 
         event.setResponse(serverPing);

@@ -10,11 +10,11 @@ import net.md_5.bungee.event.EventHandler;
 /**
  * @author TopeEstLa
  */
-public class JoinListeners implements Listener {
+public class JoinListener implements Listener {
 
     private final AdvancedBungeeManagement advancedBungeeManagement;
 
-    public JoinListeners(AdvancedBungeeManagement advancedBungeeManagement) {
+    public JoinListener(AdvancedBungeeManagement advancedBungeeManagement) {
         this.advancedBungeeManagement = advancedBungeeManagement;
     }
 
