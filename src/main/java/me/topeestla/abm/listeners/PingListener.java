@@ -1,6 +1,6 @@
-package me.topeestla.advancedbungeemanagement.listeners;
+package me.topeestla.abm.listeners;
 
-import me.topeestla.advancedbungeemanagement.AdvancedBungeeManagement;
+import me.topeestla.abm.AdvancedBungeeManagement;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.event.ProxyPingEvent;

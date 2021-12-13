@@ -1,4 +1,4 @@
-package me.topeestla.advancedbungeemanagement.utils;
+package me.topeestla.abm.utils;
 
 /*
  *  * @Created on 2021 - 13:13

@@ -1,4 +1,4 @@
-package me.topeestla.advancedbungeemanagement.data;
+package me.topeestla.abm.data;
 
 import com.google.common.collect.Lists;
 

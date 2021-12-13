@@ -1,6 +1,6 @@
-package me.topeestla.advancedbungeemanagement.commands;
+package me.topeestla.abm.commands;
 
-import me.topeestla.advancedbungeemanagement.AdvancedBungeeManagement;
+import me.topeestla.abm.AdvancedBungeeManagement;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.plugin.Command;

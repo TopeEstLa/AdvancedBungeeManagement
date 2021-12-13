@@ -1,10 +1,10 @@
-package me.topeestla.advancedbungeemanagement;
+package me.topeestla.abm;
 
-import me.topeestla.advancedbungeemanagement.commands.MaintenanceCommand;
-import me.topeestla.advancedbungeemanagement.listeners.JoinListener;
-import me.topeestla.advancedbungeemanagement.listeners.PingListener;
-import me.topeestla.advancedbungeemanagement.managers.MaintenanceManager;
-import me.topeestla.advancedbungeemanagement.utils.ConfigurationManager;
+import me.topeestla.abm.commands.MaintenanceCommand;
+import me.topeestla.abm.listeners.JoinListener;
+import me.topeestla.abm.listeners.PingListener;
+import me.topeestla.abm.managers.MaintenanceManager;
+import me.topeestla.abm.utils.ConfigurationManager;
 import net.md_5.bungee.api.plugin.Plugin;
 
 /**

@@ -1,8 +1,8 @@
-package me.topeestla.advancedbungeemanagement.managers;
+package me.topeestla.abm.managers;
 
-import me.topeestla.advancedbungeemanagement.AdvancedBungeeManagement;
-import me.topeestla.advancedbungeemanagement.data.Maintenance;
-import me.topeestla.advancedbungeemanagement.utils.IDataSerialisables;
+import me.topeestla.abm.AdvancedBungeeManagement;
+import me.topeestla.abm.data.Maintenance;
+import me.topeestla.abm.utils.IDataSerialisables;
 
 import java.io.File;
 

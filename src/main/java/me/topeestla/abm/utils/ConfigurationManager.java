@@ -1,6 +1,6 @@
-package me.topeestla.advancedbungeemanagement.utils;
+package me.topeestla.abm.utils;
 
-import me.topeestla.advancedbungeemanagement.AdvancedBungeeManagement;
+import me.topeestla.abm.AdvancedBungeeManagement;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
