@@ -1,7 +1,8 @@
 language: java
 jdk: openjdk16
+install: skip
 script:
-   - gradle build
+  - gradle build
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
