@@ -1,6 +1,12 @@
 language: java
 jdk: openjdk16
 install: skip
+before_install:
+  - wget http://services.gradle.org/distributions/gradle-7.4-rc-2-bin.zip
+  - unzip -qq gradle-7.4-rc-2-bin.zip
+  - export GRADLE_HOME=$PWD/gradle-7.4-rc-2
+  - export PATH=$GRADLE_HOME/bin:$PATH
+  - gradle -v
 script:
   - gradle build
 before_cache:
